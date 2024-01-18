@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/User/Documents/GitHub/proiectare-logica/Lab7/lab6_4.v -lang verilog -prj Lab7 -o lab6_4.spl -module lab6_4 -template D:/NewFolder/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e lab6_4.spl C:/Users/User/Documents/GitHub/proiectare-logica/Lab7/lab6_4.sym 

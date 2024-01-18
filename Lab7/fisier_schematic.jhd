@@ -1,0 +1,5 @@
+MODULE fisier_schematic
+	SUBMODULE lab6_4
+		INSTANCE XLXI_1
+	SUBMODULE lab5_3b
+		INSTANCE XLXI_2

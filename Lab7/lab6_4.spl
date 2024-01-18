@@ -1,0 +1,11 @@
+[Inputs]
+a
+b
+cin
+[Outputs]
+cout
+s
+[BiDir]
+[ATTRIBUTES]
+VeriModel lab6_4
+

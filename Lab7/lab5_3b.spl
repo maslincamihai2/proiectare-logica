@@ -1,0 +1,13 @@
+[Inputs]
+A0
+A1
+D0
+D1
+D2
+D3
+[Outputs]
+Y
+[BiDir]
+[ATTRIBUTES]
+VeriModel lab5_3b
+

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/User/Documents/GitHub/proiectare-logica/Lab7/fisier_schematic_fisier_schematic_sch_tb_isim_beh.exe" -prj "C:/Users/User/Documents/GitHub/proiectare-logica/Lab7/fisier_schematic_fisier_schematic_sch_tb_beh.prj" "work.fisier_schematic_fisier_schematic_sch_tb" "work.glbl" 
