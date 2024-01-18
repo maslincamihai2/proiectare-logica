@@ -5,5 +5,14 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="HDLCompilers" num="261" delta="new" ><arg fmt="%s" index="1">&quot;alu_top.v&quot; line 24 </arg>Connection to output port &apos;<arg fmt="%s" index="2">out</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="261" delta="new" ><arg fmt="%s" index="1">&quot;alu_top.v&quot; line 25 </arg>Connection to output port &apos;<arg fmt="%s" index="2">out</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="new" >Unit &lt;<arg fmt="%s" index="1">alu_topp</arg>&gt;: instances &lt;<arg fmt="%s" index="2">adder_mux</arg>&gt;, &lt;<arg fmt="%s" index="3">sub_mux</arg>&gt; of unit &lt;<arg fmt="%s" index="4">mux2_4</arg>&gt; are equivalent, second instance is removed
+</msg>
+
 </messages>
 

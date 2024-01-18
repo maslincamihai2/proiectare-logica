@@ -1,7 +1,9 @@
 ISim log file
-Running: C:\Users\User\Documents\GitHub\proiectare-logica\Lab7\fisier_schematic_fisier_schematic_sch_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/User/Documents/GitHub/proiectare-logica/Lab7/fisier_schematic_fisier_schematic_sch_tb_isim_beh.wdb 
+Running: C:\Users\User\Documents\GitHub\proiectare-logica\Lab7\test_alu4_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/User/Documents/GitHub/proiectare-logica/Lab7/test_alu4_isim_beh.wdb 
 ISim P.20131013 (signature 0x7708f090)
 This is a Full version of ISim.
+WARNING: File "C:/Users/User/Documents/GitHub/proiectare-logica/Lab7/alu_top.v" Line 22.  For instance uut/adder_mux/, width 8 of formal port out is not equal to width 4 of actual signal addmux_out.
+WARNING: File "C:/Users/User/Documents/GitHub/proiectare-logica/Lab7/alu_top.v" Line 22.  For instance uut/sub_mux/, width 8 of formal port out is not equal to width 4 of actual signal submux_out.
 Time resolution is 1 ps
 # onerror resume
 # wave add /

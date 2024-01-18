@@ -1,3 +1,9 @@
 MO lab6_4 NULL lab6_4.v vlg5C/lab6__4.bin 1705594677
+MO sub4 NULL alu4_modules.v vlg32/sub4.bin 1705600824
+MO alu_topp NULL alu_top.v vlg1C/alu__topp.bin 1705600824
+MO add4 NULL alu4_modules.v vlg49/add4.bin 1705600824
+MO mux2_4 NULL alu4_modules.v vlg3F/mux2__4.bin 1705600824
+MO mul4 NULL alu4_modules.v vlg76/mul4.bin 1705600824
+MO mux3_8 NULL alu4_modules.v vlg5C/mux3__8.bin 1705600824
 MO fisier_schematic NULL fisier_schematic.vf vlg3E/fisier__schematic.bin 1705594677
 MO lab5_3b NULL lab5_3b.v vlg2C/lab5__3b.bin 1705594677

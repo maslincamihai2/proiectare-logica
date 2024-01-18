@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/Users/User/Documents/GitHub/proiectare-logica/Lab7/alu_topp.xst" -ofn "C:/Users/User/Documents/GitHub/proiectare-logica/Lab7/alu_topp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 alu_topp.ngc alu_topp.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o alu_topp_map.ncd alu_topp.ngd alu_topp.pcf 
+par -w -intstyle ise -ol high -t 1 alu_topp_map.ncd alu_topp.ncd alu_topp.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml alu_topp.twx alu_topp.ncd -o alu_topp.twr alu_topp.pcf 
