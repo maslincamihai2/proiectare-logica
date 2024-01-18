@@ -1,0 +1,23 @@
+xst -intstyle ise -ifn "C:/Users/User/Documents/GitHub/proiectare-logica/lab5/lab5_1a.xst" -ofn "C:/Users/User/Documents/GitHub/proiectare-logica/lab5/lab5_1a.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 lab5_1a.ngc lab5_1a.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab5_1a_map.ncd lab5_1a.ngd lab5_1a.pcf 
+par -w -intstyle ise -ol high -t 1 lab5_1a_map.ncd lab5_1a.ncd lab5_1a.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab5_1a.twx lab5_1a.ncd -o lab5_1a.twr lab5_1a.pcf 
+vhdtdtfi -lib work C:/Users/User/Documents/GitHub/proiectare-logica/lab5/lab5_1a.v -lang verilog -prj lab5 -o lab5_1a.spl -module lab5_1a -template D:/NewFolder/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e lab5_1a.spl C:/Users/User/Documents/GitHub/proiectare-logica/lab5/lab5_1a.sym 
+xst -intstyle ise -ifn "C:/Users/User/Documents/GitHub/proiectare-logica/lab5/lab5_1a.xst" -ofn "C:/Users/User/Documents/GitHub/proiectare-logica/lab5/lab5_1a.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Documents/GitHub/proiectare-logica/lab5/lab5_1a.xst" -ofn "C:/Users/User/Documents/GitHub/proiectare-logica/lab5/lab5_1a.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 lab5_1a.ngc lab5_1a.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab5_1a_map.ncd lab5_1a.ngd lab5_1a.pcf 
+par -w -intstyle ise -ol high -t 1 lab5_1a_map.ncd lab5_1a.ncd lab5_1a.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab5_1a.twx lab5_1a.ncd -o lab5_1a.twr lab5_1a.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Documents/GitHub/proiectare-logica/lab5/lab5_1a.xst" -ofn "C:/Users/User/Documents/GitHub/proiectare-logica/lab5/lab5_1a.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 lab5_1a.ngc lab5_1a.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab5_1a_map.ncd lab5_1a.ngd lab5_1a.pcf 
+par -w -intstyle ise -ol high -t 1 lab5_1a_map.ncd lab5_1a.ncd lab5_1a.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab5_1a.twx lab5_1a.ncd -o lab5_1a.twr lab5_1a.pcf 
+xst -intstyle ise -ifn "C:/Users/User/Documents/GitHub/proiectare-logica/lab5/lab5_1a.xst" -ofn "C:/Users/User/Documents/GitHub/proiectare-logica/lab5/lab5_1a.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 lab5_1a.ngc lab5_1a.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab5_1a_map.ncd lab5_1a.ngd lab5_1a.pcf 
+par -w -intstyle ise -ol high -t 1 lab5_1a_map.ncd lab5_1a.ncd lab5_1a.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab5_1a.twx lab5_1a.ncd -o lab5_1a.twr lab5_1a.pcf 

@@ -1,0 +1,8 @@
+[Inputs]
+=sw[9:0]=
+[Outputs]
+=ld[3:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel lab5_1a
+
