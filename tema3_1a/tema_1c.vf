@@ -1,0 +1,48 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : tema_1c.vf
+// /___/   /\     Timestamp : 01/17/2024 22:09:03
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/User/Documents/GitHub/proiectare-logica/tema3_1a/tema_1c.vf -w C:/Users/User/Documents/GitHub/proiectare-logica/tema3_1a/tema_1c.sch
+//Design Name: tema_1c
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module tema_1c(sw0, 
+               sw1, 
+               led0, 
+               led1);
+
+    input sw0;
+    input sw1;
+   output led0;
+   output led1;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   
+   AND2  XLXI_1 (.I0(XLXN_1), 
+                .I1(sw0), 
+                .O(led0));
+   AND2  XLXI_4 (.I0(sw1), 
+                .I1(sw0), 
+                .O(XLXN_2));
+   OR2  XLXI_5 (.I0(XLXN_2), 
+               .I1(sw0), 
+               .O(led1));
+   OR2  XLXI_6 (.I0(sw1), 
+               .I1(sw0), 
+               .O(XLXN_1));
+endmodule

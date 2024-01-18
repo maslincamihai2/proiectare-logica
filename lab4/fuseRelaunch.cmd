@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/User/Documents/GitHub/proiectare-logica/lab4/lab4_2_lab4_2_sch_tb_isim_beh.exe" -prj "C:/Users/User/Documents/GitHub/proiectare-logica/lab4/lab4_2_lab4_2_sch_tb_beh.prj" "work.lab4_2_lab4_2_sch_tb" "work.glbl" 

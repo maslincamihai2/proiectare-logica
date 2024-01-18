@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/User/Documents/GitHub/proiectare-logica/tema3_1a/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/User/Documents/GitHub/proiectare-logica/tema3_1a/xst"
+elaborate
+-ifn test_1c.prj
+-ifmt mixed

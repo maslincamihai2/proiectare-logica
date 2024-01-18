@@ -1,0 +1,2 @@
+sch2verilog -intstyle ise -family spartan3e -tionly {} -tiext tfi -w C:/Users/User/Documents/GitHub/proiectare-logica/lab4/lab4_2.sch lab4_2.tfi 
+sch2verilog -intstyle ise -family spartan3e -tionly {} -tiext tfi -w C:/Users/User/Documents/GitHub/proiectare-logica/lab4/lab4_2.sch lab4_2.tfi 

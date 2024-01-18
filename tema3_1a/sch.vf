@@ -1,0 +1,68 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : sch.vf
+// /___/   /\     Timestamp : 01/17/2024 18:06:22
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/User/Documents/GitHub/proiectare-logica/tema3_1a/sch.vf -w C:/Users/User/Documents/GitHub/proiectare-logica/tema3_1a/sch.sch
+//Design Name: sch
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module sch(sw0, 
+           sw1, 
+           sw2, 
+           led0, 
+           led1, 
+           led2, 
+           led3);
+
+    input sw0;
+    input sw1;
+    input sw2;
+   output led0;
+   output led1;
+   output led2;
+   output led3;
+   
+   wire XLXN_4;
+   wire XLXN_10;
+   wire XLXN_11;
+   wire XLXN_12;
+   
+   AND2  XLXI_1 (.I0(XLXN_4), 
+                .I1(sw0), 
+                .O(led0));
+   AND2  XLXI_2 (.I0(sw2), 
+                .I1(sw1), 
+                .O(XLXN_4));
+   AND2  XLXI_3 (.I0(sw1), 
+                .I1(sw0), 
+                .O(XLXN_10));
+   AND2  XLXI_4 (.I0(sw2), 
+                .I1(XLXN_10), 
+                .O(led1));
+   OR2  XLXI_5 (.I0(XLXN_11), 
+               .I1(sw0), 
+               .O(led2));
+   OR2  XLXI_6 (.I0(sw2), 
+               .I1(sw1), 
+               .O(XLXN_11));
+   OR2  XLXI_7 (.I0(sw1), 
+               .I1(sw0), 
+               .O(XLXN_12));
+   OR2  XLXI_8 (.I0(sw2), 
+               .I1(XLXN_12), 
+               .O(led3));
+endmodule

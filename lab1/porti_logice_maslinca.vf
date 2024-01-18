@@ -1,0 +1,64 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : porti_logice_maslinca.vf
+// /___/   /\     Timestamp : 01/17/2024 18:18:46
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/User/Documents/GitHub/proiectare-logica/lab1/porti_logice_maslinca.vf -w C:/Users/User/Documents/GitHub/proiectare-logica/lab1/porti_logice_maslinca.sch
+//Design Name: porti_logice_maslinca
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module porti_logice_maslinca(btn0, 
+                             btn1, 
+                             led0, 
+                             led1, 
+                             led2, 
+                             led3, 
+                             led4, 
+                             led5, 
+                             led6);
+
+    input btn0;
+    input btn1;
+   output led0;
+   output led1;
+   output led2;
+   output led3;
+   output led4;
+   output led5;
+   output led6;
+   
+   
+   INV  XLXI_2 (.I(btn0), 
+               .O(led0));
+   AND2  XLXI_3 (.I0(btn1), 
+                .I1(btn0), 
+                .O(led1));
+   OR2  XLXI_4 (.I0(btn1), 
+               .I1(btn0), 
+               .O(led2));
+   NAND2  XLXI_5 (.I0(btn1), 
+                 .I1(btn0), 
+                 .O(led3));
+   NOR2  XLXI_6 (.I0(btn1), 
+                .I1(btn0), 
+                .O(led4));
+   XOR2  XLXI_7 (.I0(btn1), 
+                .I1(btn0), 
+                .O(led5));
+   XNOR2  XLXI_8 (.I0(btn1), 
+                 .I1(btn0), 
+                 .O(led6));
+endmodule

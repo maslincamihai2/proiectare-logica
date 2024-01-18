@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/User/Documents/GitHub/proiectare-logica/tema3_1a/test_2a.v -lang verilog -prj tema3_1a -o test_2a.spl -module test_2a -template D:/NewFolder/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e test_2a.spl C:/Users/User/Documents/GitHub/proiectare-logica/tema3_1a/test_2a.sym 

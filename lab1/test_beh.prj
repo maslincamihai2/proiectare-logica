@@ -1,0 +1,4 @@
+verilog work "porti_logice_maslinca.vf"
+verilog work "cod_verilog.v"
+verilog work "test.v"
+verilog work "D:/NewFolder/14.7/ISE_DS/ISE//verilog/src/glbl.v"

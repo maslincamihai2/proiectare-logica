@@ -1,0 +1,15 @@
+// Verilog instantiation template created from schematic C:\Users\User\Documents\GitHub\proiectare-logica\tema3_1a\sch.sch - Wed Jan 17 21:34:42 2024
+//
+// Notes: 
+// To use this template to instantiate this component,cut-and-paste and then edit
+//
+// Instantiate the UUT
+   sch UUT (
+		.sw0(    ), 
+		.sw1(    ), 
+		.sw2(    ), 
+		.led0(    ), 
+		.led2(    ), 
+		.led1(    ), 
+		.led3(    )
+   );

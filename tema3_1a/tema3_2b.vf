@@ -1,0 +1,74 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : tema3_2b.vf
+// /___/   /\     Timestamp : 01/17/2024 23:37:54
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/User/Documents/GitHub/proiectare-logica/tema3_1a/tema3_2b.vf -w C:/Users/User/Documents/GitHub/proiectare-logica/tema3_1a/tema3_2b.sch
+//Design Name: tema3_2b
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module tema3_2b(sw0, 
+                sw1, 
+                sw2, 
+                led0, 
+                led1, 
+                led2, 
+                led3);
+
+    input sw0;
+    input sw1;
+    input sw2;
+   output led0;
+   output led1;
+   output led2;
+   output led3;
+   
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_7;
+   wire XLXN_9;
+   wire XLXN_10;
+   wire XLXN_11;
+   
+   NAND3  XLXI_1 (.I0(sw2), 
+                 .I1(sw1), 
+                 .I2(sw0), 
+                 .O(led0));
+   OR3  XLXI_2 (.I0(XLXN_11), 
+               .I1(XLXN_10), 
+               .I2(XLXN_9), 
+               .O(led1));
+   NOR3  XLXI_3 (.I0(sw2), 
+                .I1(sw1), 
+                .I2(sw0), 
+                .O(led2));
+   AND3  XLXI_4 (.I0(XLXN_7), 
+                .I1(XLXN_6), 
+                .I2(XLXN_5), 
+                .O(led3));
+   INV  XLXI_5 (.I(sw0), 
+               .O(XLXN_9));
+   INV  XLXI_6 (.I(sw1), 
+               .O(XLXN_10));
+   INV  XLXI_7 (.I(sw2), 
+               .O(XLXN_11));
+   INV  XLXI_8 (.I(sw0), 
+               .O(XLXN_5));
+   INV  XLXI_9 (.I(sw1), 
+               .O(XLXN_6));
+   INV  XLXI_10 (.I(sw2), 
+                .O(XLXN_7));
+endmodule

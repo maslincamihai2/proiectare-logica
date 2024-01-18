@@ -1,0 +1,115 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : lab4_1.vf
+// /___/   /\     Timestamp : 01/18/2024 11:37:14
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/User/Documents/GitHub/proiectare-logica/lab4/lab4_1.vf -w C:/Users/User/Documents/GitHub/proiectare-logica/lab4/lab4_1.sch
+//Design Name: lab4_1
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module lab4_1(sw0, 
+              sw1, 
+              led0, 
+              led1, 
+              led2, 
+              led3, 
+              led4);
+
+    input sw0;
+    input sw1;
+   output led0;
+   output led1;
+   output led2;
+   output led3;
+   output led4;
+   
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_25;
+   wire XLXN_26;
+   wire XLXN_27;
+   wire XLXN_28;
+   wire XLXN_32;
+   wire XLXN_33;
+   wire XLXN_34;
+   wire XLXN_35;
+   wire XLXN_42;
+   wire XLXN_43;
+   wire XLXN_44;
+   wire XLXN_45;
+   
+   OR2  XLXI_2 (.I0(sw0), 
+               .I1(sw1), 
+               .O(XLXN_25));
+   OR2  XLXI_3 (.I0(XLXN_28), 
+               .I1(XLXN_27), 
+               .O(XLXN_26));
+   OR2  XLXI_10 (.I0(XLXN_6), 
+                .I1(XLXN_5), 
+                .O(led1));
+   XOR2  XLXI_11 (.I0(sw1), 
+                 .I1(sw0), 
+                 .O(led0));
+   AND2  XLXI_12 (.I0(sw1), 
+                 .I1(XLXN_3), 
+                 .O(XLXN_5));
+   AND2  XLXI_13 (.I0(sw0), 
+                 .I1(XLXN_4), 
+                 .O(XLXN_6));
+   INV  XLXI_14 (.I(sw0), 
+                .O(XLXN_3));
+   INV  XLXI_15 (.I(sw1), 
+                .O(XLXN_4));
+   AND2  XLXI_28 (.I0(XLXN_26), 
+                 .I1(XLXN_25), 
+                 .O(led2));
+   INV  XLXI_31 (.I(sw1), 
+                .O(XLXN_27));
+   INV  XLXI_32 (.I(sw0), 
+                .O(XLXN_28));
+   NAND2  XLXI_53 (.I0(sw0), 
+                  .I1(sw0), 
+                  .O(XLXN_34));
+   NAND2  XLXI_54 (.I0(sw1), 
+                  .I1(sw1), 
+                  .O(XLXN_35));
+   NAND2  XLXI_55 (.I0(sw1), 
+                  .I1(XLXN_34), 
+                  .O(XLXN_32));
+   NAND2  XLXI_56 (.I0(XLXN_35), 
+                  .I1(sw0), 
+                  .O(XLXN_33));
+   NAND2  XLXI_57 (.I0(XLXN_33), 
+                  .I1(XLXN_32), 
+                  .O(led3));
+   NOR2  XLXI_63 (.I0(XLXN_43), 
+                 .I1(XLXN_42), 
+                 .O(led4));
+   NOR2  XLXI_64 (.I0(sw0), 
+                 .I1(sw1), 
+                 .O(XLXN_42));
+   NOR2  XLXI_65 (.I0(XLXN_45), 
+                 .I1(XLXN_44), 
+                 .O(XLXN_43));
+   NOR2  XLXI_66 (.I0(sw0), 
+                 .I1(sw0), 
+                 .O(XLXN_44));
+   NOR2  XLXI_67 (.I0(sw1), 
+                 .I1(sw1), 
+                 .O(XLXN_45));
+endmodule

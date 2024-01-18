@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "C:/Users/User/Documents/GitHub/proiectare-logica/tema3_1a/sch.xst" -ofn "C:/Users/User/Documents/GitHub/proiectare-logica/tema3_1a/sch.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Documents/GitHub/proiectare-logica/tema3_1a/sch.xst" -ofn "C:/Users/User/Documents/GitHub/proiectare-logica/tema3_1a/sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 sch.ngc sch.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o sch_map.ncd sch.ngd sch.pcf 
+par -w -intstyle ise -ol high -t 1 sch_map.ncd sch.ncd sch.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml sch.twx sch.ncd -o sch.twr sch.pcf 
+sch2sym -intstyle ise -family spartan3e -refsym sch C:/Users/User/Documents/GitHub/proiectare-logica/tema3_1a/sch.sch C:/Users/User/Documents/GitHub/proiectare-logica/tema3_1a/sch.sym 
+sch2hdl -intstyle ise -family spartan3e -verilog sch_drc.vf -w C:/Users/User/Documents/GitHub/proiectare-logica/tema3_1a/sch.sch 
+sch2verilog -intstyle ise -family spartan3e -tionly {} -tiext tfi -w C:/Users/User/Documents/GitHub/proiectare-logica/tema3_1a/sch.sch sch.tfi 
