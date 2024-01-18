@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/Users/User/Documents/GitHub/proiectare-logica/lab6/lab6_3.xst" -ofn "C:/Users/User/Documents/GitHub/proiectare-logica/lab6/lab6_3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 lab6_3.ngc lab6_3.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o lab6_3_map.ncd lab6_3.ngd lab6_3.pcf 
+par -w -intstyle ise -ol high -t 1 lab6_3_map.ncd lab6_3.ncd lab6_3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml lab6_3.twx lab6_3.ncd -o lab6_3.twr lab6_3.pcf 
